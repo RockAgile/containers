@@ -7,6 +7,7 @@ ENV DOCKERIZE_VERSION v0.6.1
 # Install Postgres
 RUN apt-get update -qq && apt-get install -y \
   build-essential \
+  netcat \
   wget \
   libpq-dev \
   postgresql-client \
