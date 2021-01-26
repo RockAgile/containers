@@ -1,6 +1,8 @@
 # Build Base image
 FROM ruby:2.6.6 as base
 
+RUN gem install bundler -v 2.1.4
+
 # Environment Variables
 ENV DOCKERIZE_VERSION v0.6.1
 
